@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TastyFood</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Fonts Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w-full bg-chinese-yellow fixed top-0 z-50">
+      <div
+        class="max-w-[1140px] w-full mx-auto px-5 flex justify-between items-center py-3"
+      >
+        <!-- Site Logo -->
+        <div class="flex gap-3 items-center">
+          <img src="./images/logo.png" width="35px" alt="" />
+          <span class="font-medium text-3xl">
+            Tasty<span class="text-white">Food</span>
+          </span>
+        </div>
+
+        <!-- Menu -->
+        <div class="flex gap-6 items-center">
+          <a class="text-lg" href="#">Popular</a>
+          <a class="text-lg" href="#">Dessert</a>
+          <a class="text-lg" href="#">Drinks</a>
+          <a class="text-lg" href="#">About Us</a>
+        </div>
+
+        <!-- Profile Dropdown -->
+        <details class="relative">
+          <summary class="inline-flex items-center rounded-full size-12">
+            <!-- Avatar -->
+            <img
+              class="rounded-full p-0.5 bg-gray-200"
+              src="./images/pizza.png"
+              alt=""
+            />
+          </summary>
+
+          <ul
+            class="flex flex-col w-40 bg-white rounded-lg border border-gray-200 absolute top-[50px] right-0 z-50"
+          >
+            <li class="">
+              <a
+                class="text-base inline-block hover:bg-gray-100 w-full py-2 px-2.5 rounded-t-lg"
+                href="#"
+              >
+                <i class="ri-user-line text-gray-400 text-lg mr-1.5"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base inline-block hover:bg-gray-100 w-full py-2 px-2.5"
+                href="#"
+              >
+                <i
+                  class="ri-shopping-cart-line text-gray-400 text-lg mr-1.5"
+                ></i>
+                Cart
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base inline-block hover:bg-gray-100 w-full py-2 px-2.5"
+                href="#"
+              >
+                <i class="ri-heart-line text-gray-400 text-lg mr-1.5"></i>
+                Wishlist
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base inline-block hover:bg-gray-100 w-full py-2 px-2.5"
+                href="#"
+              >
+                <i class="ri-settings-line text-gray-400 text-lg mr-1.5"></i>
+                Settings
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base inline-block text-red-600 hover:bg-gray-100 w-full py-2 px-2.5 border-t border-t-gray-200 rounded-b-lg"
+                href="#"
+              >
+                <i class="ri-logout-box-line text-lg mr-1.5"></i>
+                Log Out
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="w-full min-h-screen flex items-center py-8">
+        <div class="max-w-[1140px] w-full mx-auto px-5">
+          <h1 class="font-medium text-3xl mb-6">🔥 Popular Right Now</h1>
+          <!-- 3 Grid -->
+          <div class="grid grid-cols-3 gap-6">
+            <!-- Food Card Start -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg px-3 py-3 shadow-sm"
+            >
+              <!-- Image Wrapper -->
+              <div class="rounded relative">
+                <img
+                  class="rounded w-full max-h-56 object-contain bg-gray-200"
+                  src="./images/panta-bhat.png"
+                  alt=""
+                />
+                <!-- Total Price Tag -->
+                <div
+                  class="w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2.5 py-1.5 bg-white/30 rounded backdrop-blur-xs"
+                >
+                  <p class="text-sm">Total Price: 00000</p>
+                </div>
+              </div>
+
+              <!-- Title and Wishlist Btn -->
+              <div class="flex justify-between items-center mt-2">
+                <h3 class="text-xl font-medium">Panta Bhat</h3>
+                <a href="#">
+                  <i class="ri-heart-line text-2xl"></i>
+                </a>
+              </div>
+
+              <!-- Food Description -->
+              <p class="mt-1 mb-2.5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                vel.
+              </p>
+
+              <!-- Price and Add to cart -->
+              <div class="flex items-center justify-between mt-4">
+                <h3 class="text-3xl font-medium text-chinese-yellow">
+                  Tk. 150.00
+                </h3>
+                <button
+                  class="py-2 px-3.5 bg-chinese-yellow rounded cursor-pointer"
+                >
+                  <i class="ri-shopping-cart-line mr-1 text-base"></i>
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+            <!-- Food Card End -->
+
+            <!-- Food Card Start -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg px-3 py-3 shadow-sm"
+            >
+              <!-- Image Wrapper -->
+              <div class="rounded relative">
+                <img
+                  class="rounded w-full max-h-56 object-contain bg-gray-200"
+                  src="./images/burger.png"
+                  alt=""
+                />
+                <!-- Total Price Tag -->
+                <div
+                  class="w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2.5 py-1.5 bg-white/30 rounded backdrop-blur-xs"
+                >
+                  <p class="text-sm">Total Price: 00000</p>
+                </div>
+              </div>
+
+              <!-- Title and Wishlist Btn -->
+              <div class="flex justify-between items-center mt-2">
+                <h3 class="text-xl font-medium">Spicy Burger</h3>
+                <a href="#">
+                  <i class="ri-heart-line text-2xl"></i>
+                </a>
+              </div>
+
+              <!-- Food Description -->
+              <p class="mt-1 mb-2.5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                vel.
+              </p>
+
+              <!-- Price and Add to cart -->
+              <div class="flex items-center justify-between mt-4">
+                <h3 class="text-3xl font-medium text-chinese-yellow">
+                  Tk. 299.00
+                </h3>
+                <button
+                  class="py-2 px-3.5 bg-chinese-yellow rounded cursor-pointer"
+                >
+                  <i class="ri-shopping-cart-line mr-1 text-base"></i>
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+            <!-- Food Card End -->
+
+            <!-- Food Card Start -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg px-3 py-3 shadow-sm"
+            >
+              <!-- Image Wrapper -->
+              <div class="rounded relative">
+                <img
+                  class="rounded w-full max-h-56 object-contain bg-gray-200"
+                  src="./images/pizza.png"
+                  alt=""
+                />
+                <!-- Total Price Tag -->
+                <div
+                  class="w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2.5 py-1.5 bg-white/30 rounded backdrop-blur-xs"
+                >
+                  <p class="text-sm">Total Price: 00000</p>
+                </div>
+              </div>
+
+              <!-- Title and Wishlist Btn -->
+              <div class="flex justify-between items-center mt-2">
+                <h3 class="text-xl font-medium">Mexican Pizza</h3>
+                <a href="#">
+                  <i class="ri-heart-line text-2xl"></i>
+                </a>
+              </div>
+
+              <!-- Food Description -->
+              <p class="mt-1 mb-2.5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                vel.
+              </p>
+
+              <!-- Price and Add to cart -->
+              <div class="flex items-center justify-between mt-4">
+                <h3 class="text-3xl font-medium text-chinese-yellow">
+                  Tk. 450.00
+                </h3>
+                <button
+                  class="py-2 px-3.5 bg-chinese-yellow rounded cursor-pointer"
+                >
+                  <i class="ri-shopping-cart-line mr-1 text-base"></i>
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+            <!-- Food Card End -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
