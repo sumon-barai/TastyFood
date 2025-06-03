@@ -1,0 +1,31 @@
+{
+  "foods": [
+    {
+      "id": "1",
+      "title": "Panta Bhat",
+      "des": "lkjflkasjfdlajlf",
+      "img": "./images/panta-bhat.png",
+      "total_price": 5000,
+      "price": 100,
+      "isFavorite": false
+    },
+    {
+      "id": "2",
+      "title": "fafafaf",
+      "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, vel.",
+      "img": "./images/panta-bhat.png",
+      "total_price": 5000,
+      "price": 100,
+      "isFavorite": true
+    },
+    {
+      "id": "3",
+      "title": "three",
+      "des": "Lofffffffffffffffffffffff",
+      "img": "./images/panta-bhat.png",
+      "total_price": 5000,
+      "price": 100,
+      "isFavorite": true
+    }
+  ]
+}
